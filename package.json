@@ -13,6 +13,6 @@
   "author": "Snorrre Lothar von Gohren Edwin <snorre.edwin@gmail.com> (https://github.com/Snorlock)",
   "license": "ISC",
   "dependencies": {
-    "bleacon": "git+https://github.com/BEKK-IoT/Beacon.git"
+    "beacon": "git+https://github.com/BEKK-IoT/Beacon.git"
   }
 }
