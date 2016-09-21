@@ -1,10 +1,11 @@
 import { firebase } from 'devices-core-firebase';
 import { beacon } from 'beacon';
-// var beacon = require('beacon')
 const TEAM = 'my-awsome-team-name';
 const fb = new firebase(TEAM);
 
-//This is used to create a fake beacon
+//Incorporated this library: https://github.com/sandeepmistry/node-bleacon
+
+//This is used to create a fake beacon, with id, major, minor, measuredPower
 beacon.startAdvertising('e2c56db5dffb48d2b060d0f5a71096e0', 0, 0, -59);
 
 //This is to detect beacons in general
@@ -17,5 +18,5 @@ beacon.on('telemetrydata', function(telemetrydata){
 	console.log('telemetrydata: ', telemetrydata);
 });
 
-//Here you can either scan for everything, or a specific ID
+//Here you can either scan for everything, or a specific ID, and major and minor
 beacon.startScanning(/*'e2c56db5dffb48d2b060d0f5a71096e0', 0, 0*/);
