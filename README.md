@@ -70,6 +70,8 @@ Beacon.stopScanning();
 
 ### Events
 
+#### Discover
+
 ```javascript
 Bleacon.on('discover', function(bleacon) {
     // ...
@@ -92,6 +94,9 @@ Bleacon.on('discover', function(bleacon) {
    * +/- meters, based on measuredPower and RSSI
  * proximity
    * current proximity ('unknown', 'immediate', 'near', or 'far')
+   
+   
+#### Telemetry data
 
 ```javascript
 Bleacon.on('telemetrydata', function(telemetrydata) {
