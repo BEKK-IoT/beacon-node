@@ -53,13 +53,13 @@ Beacon.startScanning([uuid], [major], [minor]);
 Examples
 
 ```javascript
-Beacon.startScanning(); // scan for any bleacons
+Beacon.startScanning(); // scan for any beacons
 
-Beacon.startScanning(uuid); // scan for bleacons with a particular uuid
+Beacon.startScanning(uuid); // scan for beacons with a particular uuid
 
-Beacon.startScanning(uuid, major); // scan for bleacons with a particular uuid and major
+Beacon.startScanning(uuid, major); // scan for beacons with a particular uuid and major
 
-Beacon.startScanning(uuid, major, minor); // scan for bleacons with a particular uuid. major, and minor
+Beacon.startScanning(uuid, major, minor); // scan for beacons with a particular uuid. major, and minor
 ```
 
 ### Stop scanning
