@@ -1,17 +1,4 @@
-# beacon-node
 
-This is a node-project to get you started working with beacons. 
-It comes with two library dependencies: Firebase and Beacon. 
-Beacon is a forked node library from [Bleacon](https://github.com/sandeepmistry/node-bleacon).
-We have replaced the [estimote specs](https://github.com/Estimote/estimote-specs).
-You know firebase from the last workshop.
-
-## Setup
-
-`git clone `
-`npm install`
-
-## Firebase
 
 ## Beacon API
 
@@ -77,23 +64,6 @@ Bleacon.on('discover', function(bleacon) {
     // ...
 });
 ```
-
-```bleacon``` properties:
-
- * uuid
-   * advertised uuid
- * major
-   * advertised major
- * minor
-   * advertised minor
- * measuredPower
-   * advertised measured RSSI at 1 meter away
- * rssi
-   * current RSSI
- * accuracy
-   * +/- meters, based on measuredPower and RSSI
- * proximity
-   * current proximity ('unknown', 'immediate', 'near', or 'far')
    
    
 #### Telemetry data
@@ -104,45 +74,4 @@ Bleacon.on('telemetrydata', function(telemetrydata) {
 });
 ```
 
-```telemetrydata``` properties
-
-Due limited size on package, telemetry data is seperated in two packages.
-
-Package A:
-
- * shortIdentifier 
-   * The short identifier of the beacons
- * protocolVersion
-   * protocol version of service, our beacons use protocol 1
- * acceleration
-   * acceleration of the beacon
- * isMoving 
-   * bool
- * motionStateDuration 
-   * not supported for out beacons
- * gpio
-    * status on state on pins: high or low
- * errors
-    * clock or firmware errors
-    
-Package B:
-
- * shortIdentifier 
-   * The short identifier of the beacons
- * protocolVersion
-   * protocol version of service, our beacons use protocol 1
- * magneticField
-   * ?
- * ambientLightLevel 
-   * ambient light in the room
- * temperature 
-   * temoerature in the room
- * uptime
-    * ?
- * batteryVoltage
-    * ?
- * batteryLevel
-    * status on state on pins: high or low
- * errors
-    * clock or firmware errors
 
