@@ -6,7 +6,7 @@ const fb = new firebase(TEAM);
 //Incorporated this library: https://github.com/sandeepmistry/node-bleacon
 
 //This is used to create a fake beacon, with id, major, minor, measuredPower
-beacon.startAdvertising('e2c56db5dffb48d2b060d0f5a71096e0', 0, 10, -59);
+//beacon.startAdvertising('e2c56db5dffb48d2b060d0f5a71096e0', 0, 10, -59);
 
 //This is to detect beacons in general
 beacon.on('discover', function(Beacon) {    
