@@ -1,6 +1,6 @@
 import { firebase } from 'devices-core-firebase';
 import { beacon } from 'beacon';
-const TEAM = 'RÆVSNÆRK';
+const TEAM = 'my-awesome-team-name';
 const fb = new firebase(TEAM);
 
 //Incorporated this library: https://github.com/sandeepmistry/node-bleacon
